@@ -31,7 +31,7 @@ module.exports = {
     'arrow-parens': ['error','as-needed', {
       'requireForBlockBody': true
     }],
-    'no-confusing-arrow': 'error',
+    'no-confusing-arrow': ['error', { 'allowParens': true }],
     'no-duplicate-imports': 'error',
     'import/named': 'error',
     'import/default': 'off',
