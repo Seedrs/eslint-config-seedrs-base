@@ -2,7 +2,7 @@ steps:
   - name: ":docker: Build"
     agents:
       queue: npm-packages
-    # branches: master
+    branches: master
     plugins:
       docker-compose#v2.5.1:
         build: eslint_config_seedrs_base
@@ -13,7 +13,7 @@ steps:
     command: '.buildkite/steps/publish'
     agents:
       queue: npm-packages
-    # branches: master
+    branches: master
     concurrency: 1
     concurrency_group: 'eslint_config_seedrs_base/publish'
     plugins:
