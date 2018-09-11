@@ -1,5 +1,9 @@
 FROM node:8.10.0-stretch
+
 ARG NPM_TOKEN
+
+WORKDIR /usr/src/app
+
 RUN apt-get update && \
   apt-get -y install apt-transport-https && \
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | \
