@@ -1,26 +1,34 @@
 {
   "name": "@seedrs/eslint-config-seedrs-base",
-  "version": "1.0.3",
+  "version": "0.0.0-semantic-release",
   "description": "Seedr's ESLint config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "semantic-release": "semantic-release --no-ci -b $BUILDKITE_JOB_ID",
+    "commit": "git-cz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seedrs/eslint-config-seedrs-base.git"
-  },
+  "repository": "https://github.com/seedrs/eslint-config-seedrs-base.git",
   "keywords": [
     "eslint"
   ],
-  "author": "Kenley Tomline (kenley.tomlin@seedrs.com)",
+  "author": "Seedrs (tech@seedrs.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/seedrs/eslint-config-seedrs-base/issues"
   },
   "homepage": "https://github.com/seedrs/eslint-config-seedrs-base#readme",
   "peerDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": ">= 4.12.1 <= 5.3.0",
     "eslint-plugin-import": "^2.8.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.9.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

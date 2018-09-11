@@ -1,0 +1,21 @@
+steps:
+  - name: ":docker: Build"
+    agents:
+      queue: npm-packages
+    branches: master
+    plugins:
+      docker-compose#v2.5.1:
+        build: eslint_config_seedrs_base
+
+  - wait
+
+  - name: ':rocket: publish'
+    command: 'sh .buildkite/steps/publish'
+    agents:
+      queue: npm-packages
+    branches: master
+    concurrency: 1
+    concurrency_group: 'eslint_config_seedrs_base/publish'
+    plugins:
+      docker-compose#v2.5.1:
+        run: eslint_config_seedrs_base
