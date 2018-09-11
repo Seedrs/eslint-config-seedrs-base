@@ -60,7 +60,7 @@ module.exports = {
     'eol-last': ['error','always'],
     'array-bracket-spacing': ['error','never'],
     'object-curly-spacing': ['error','always'],
-    'max-len': ['error',100],
+    'max-len': ['error',150],
     'comma-style': ['error','last'],
     'comma-dangle': ['error','never'],
     'semi': 'error',
