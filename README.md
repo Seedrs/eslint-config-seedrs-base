@@ -1,5 +1,7 @@
 # Seedrs Javascript eslint config
 
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 This is the Seedrs Javascript eslint base configuration. This
 configuration should be used in all Javascript project and can be
 extended if needed i.e. It doesn't contain any rules for React.
@@ -567,4 +569,20 @@ const a = 1
 const a = 1;
 ```
 
+## Commitizen
 
+We use commitizen and semantic release to help manage versions and
+publishing of the package to npm. Stage your changes and then run:
+
+``
+$ yarn commit
+``
+
+This will bring up a prompt choose the options that best fit the
+description of your change and an automated commit message will be
+generated.
+
+## Publishing
+
+Publishing is handled by a buildkite pipeline. Get your PR approved and
+then merge it to create an automated release.
