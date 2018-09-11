@@ -10,6 +10,5 @@ RUN apt-get update && \
   apt-get -y install yarn
 
 COPY package.json .
-COPY ._npmrc .npmrc
 RUN yarn install
 COPY . .
