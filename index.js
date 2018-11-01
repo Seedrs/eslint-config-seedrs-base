@@ -68,7 +68,7 @@ module.exports = {
       'SwitchCase': 1,
       'VariableDeclarator': 1,
       'outerIIFEBody': 1,
-      'MemberExpression': 0,
+      'MemberExpression': 1,
       'FunctionDeclaration': {
         'parameters': 1,
         'body': 1
