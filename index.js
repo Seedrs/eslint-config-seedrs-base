@@ -3,7 +3,7 @@ module.exports = {
     'import'
   ],
   rules: {
-    'prefer-const': ['error',{
+    'prefer-const': ['error', {
       'destructuring': 'any',
       'ignoreReadBeforeAssign': true
     }],
@@ -11,11 +11,11 @@ module.exports = {
     'no-var': 'error',
     'no-new-object': 'error',
     'object-shorthand': 'error',
-    'quote-props': ['error','as-needed'],
+    'quote-props': ['error', 'as-needed'],
     'no-array-constructor': 'error',
     'array-callback-return': 'error',
     'prefer-destructuring': 'error',
-    'quotes': ['error','single'],
+    'quotes': ['error', 'single'],
     'prefer-template': 'error',
     'template-curly-spacing': ['error', 'never'],
     'no-useless-escape': 'error',
@@ -25,10 +25,10 @@ module.exports = {
     'no-param-reassign': 'error',
     'prefer-arrow-callback': 'error',
     'arrow-spacing': 'error',
-    'arrow-body-style': ['error','as-needed', {
+    'arrow-body-style': ['error', 'as-needed', {
       'requireReturnForObjectLiteral': false
     }],
-    'arrow-parens': ['error','as-needed', {
+    'arrow-parens': ['error', 'as-needed', {
       'requireForBlockBody': true
     }],
     'no-confusing-arrow': ['error', { 'allowParens': true }],
@@ -52,19 +52,19 @@ module.exports = {
     'dot-notation': 'error',
     'eqeqeq': 'error',
     'space-before-blocks': 'error',
-    'keyword-spacing': ['error',{
+    'keyword-spacing': ['error', {
       'after': true,
       'before': true
     }],
     'space-infix-ops': 'error',
-    'eol-last': ['error','always'],
-    'array-bracket-spacing': ['error','never'],
-    'object-curly-spacing': ['error','always'],
-    'max-len': ['error',150],
-    'comma-style': ['error','last'],
-    'comma-dangle': ['error','never'],
+    'eol-last': ['error', 'always'],
+    'array-bracket-spacing': ['error', 'never'],
+    'object-curly-spacing': ['error', 'always'],
+    'max-len': ['error', 150],
+    'comma-style': ['error', 'last'],
+    'comma-dangle': ['error', 'never'],
     'semi': 'error',
-    'indent': ['error',2,{
+    'indent': ['error', 2, {
       'SwitchCase': 1,
       'VariableDeclarator': 1,
       'outerIIFEBody': 1,
@@ -84,7 +84,9 @@ module.exports = {
       'ObjectExpression': 1,
       'ImportDeclaration': 1,
       'flatTernaryExpressions': false
+    }],
+    'comma-spacing': ['error', {
+      'before': false, 'after': true
     }]
   }
 }
-
